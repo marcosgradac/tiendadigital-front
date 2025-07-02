@@ -1,0 +1,113 @@
+.auth-wrapper {
+  display: flex;
+  height: 90vh;
+  width: 90%;
+  margin: 5vh auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: #1e1e1e; // Fondo general oscuro elegante
+
+  .auth-left {
+    width: 50%;
+    background-color: #4f48cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .left-content {
+      text-align: center;
+      max-width: 400px;
+
+      h4 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .icon-launch {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .auth-right {
+    width: 50%;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-box {
+      width: 100%;
+      max-width: 400px;
+      padding: 3rem;
+
+      .form-title {
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .auth-button {
+        margin-top: 1.5rem;
+        padding: 0.75rem;
+        border-radius: 30px;
+        background-color: #4f48cb;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0 6px 20px rgba(79, 72, 203, 0.4);
+
+        &:hover {
+          background-color: #5f59d1;
+        }
+      }
+
+      .auth-link {
+        margin-top: 1rem;
+        color: #ccc;
+        text-align: center;
+
+        span {
+          color: #4f48cb;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+.MuiInputBase-root {
+  background-color: #1e1e1e !important;
+  border: 1px solid #333 !important;
+  border-radius: 8px !important;
+  color: white !important;
+  padding-left: 10px;
+}
+
+.MuiInputLabel-root {
+  color: #aaa !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .auth-left,
+    .auth-right {
+      width: 100%;
+      height: 50vh;
+    }
+  }
+}
